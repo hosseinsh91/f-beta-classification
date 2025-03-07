@@ -75,27 +75,6 @@ history = model.fit(x_train, y_train_hot, epochs=50, validation_split=0.2)
 
 ---
 
-## **📌 Training Performance**
-### **📊 Key Observations**
-✅ **F-Beta score steadily increases across epochs, indicating improved model performance.**  
-✅ **Loss decreases consistently, demonstrating effective learning.**  
-
-### **📌 Visualization of Training Progress**
-```python
-import matplotlib.pyplot as plt
-
-plt.plot(history.history['loss'], label='Training Loss')
-plt.plot(history.history['val_loss'], label='Validation Loss')
-plt.plot(history.history['F_beta'], label='Training F-Beta')
-plt.legend()
-plt.xlabel('Epochs')
-plt.ylabel('Loss & F-Beta Score')
-plt.title('Training Performance')
-plt.show()
-```
-
----
-
 ## **📌 Installation & Setup**
 ### **📌 Prerequisites**
 - **Python 3.x**
